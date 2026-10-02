@@ -1,161 +1,39 @@
-# 🦉 ASEFIP - Plataforma de Filosofía Peruana
 
-**La primera plataforma digital dedicada al pensamiento filosófico peruano**
-
-[![Website](https://img.shields.io/badge/Website-Online-success)](https://lufer19.github.io/agoraperuana/)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-
----
-
-## 🎯 Misión
-
-Democratizar el acceso al conocimiento filosófico peruano y universal mediante una plataforma web gratuita, creando un espacio de aprendizaje, debate y comunidad para estudiantes y entusiastas de la filosofía.
-
----
-
-## ✨ Características Principales
-
-- 🇵🇪 **Filosofía Peruana**: Sección dedicada a pensadores peruanos como Salazar Bondy, Miró Quesada y Mariátegui
-- 📝 **Sistema de Artículos**: Los usuarios pueden enviar sus ensayos filosóficos mediante Google Forms
-- 💬 **Foro Comunitario**: Sistema de comentarios en tiempo real con CommentBox
-- 🎯 **Ejercicios Interactivos**: Tests de filosofía con 4 modos de juego y 3 niveles de dificultad
-- 📖 **Glosario Filosófico**: Diccionario de términos filosóficos explicados
-- 📅 **Efemérides Filosóficas**: Hechos históricos de la filosofía según la fecha
-- 📚 **Recursos Educativos**: Biblioteca digital con materiales de estudio
-
----
-
-## 🚀 Tecnologías
-
-### **Frontend**
-- HTML5, CSS3, JavaScript (Vanilla)
-- Diseño responsive para todos los dispositivos
-- Animaciones CSS nativas
-
-### **Hosting y Despliegue**
-- GitHub Pages (hosting gratuito)
-- Despliegue automático desde rama `main`
-
-### **Servicios Externos**
-- **Google Forms**: Recepción de artículos filosóficos
-- **CommentBox.io**: Sistema de comentarios para el foro comunitario
-- **Font Awesome**: Iconografía
-
-### **Almacenamiento**
-- localStorage del navegador para estadísticas de ejercicios
-- Sin base de datos backend (arquitectura JAMstack)
-
----
-
-## 📊 Contenido Actual
-
-- 30+ preguntas en ejercicios interactivos (filosofía general y peruana)
-- 6 filósofos peruanos documentados con biografías completas
-- Información sobre 6 períodos históricos del pensamiento filosófico peruano
-- Sistema de envío de artículos funcional
-- Foro comunitario con comentarios en tiempo real
-
----
-
-## 🗂️ Estructura del Proyecto
-
-```
-agoraperuana/
-├── index.html              # Página principal
-├── filosofia-peruana.html  # Filósofos peruanos
-├── ejercicios.html         # Tests interactivos
-├── enviar-articulo.html    # Redirección a Google Forms
-├── comunidad.html          # Foro con CommentBox
-├── chatbot.html            # Panel de acceso rápido
-├── glosario.html           # Diccionario filosófico
-├── recursos.html           # Biblioteca digital
-├── styles.css              # Estilos globales
-├── app.js                  # Scripts JavaScript
-└── README.md               # Este archivo
-```
-
----
-
-## 🌐 Enlaces Oficiales
-
-- **Sitio Web**: [https://lufer19.github.io/agoraperuana/](https://lufer19.github.io/agoraperuana/)
-- **Email**: contacto@asefip.org
-- **TikTok**: [@asefip01](https://www.tiktok.com/@asefip01)
-- **Instagram**: [@asefip_](https://www.instagram.com/asefip_)
-- **Facebook**: [ASEFIP Oficial](https://www.facebook.com/profile.php?id=61585745674271)
-- **YouTube**: [El Búho Filosófico](https://youtube.com/@elbuho.filosofico)
-
----
-
-## 🤝 Cómo Contribuir
-
-### **Para Filósofos y Estudiantes**
-1. Envía tus artículos filosóficos a través del [formulario oficial](https://forms.gle/P9w2FiNDUqQnR51n6)
-2. Participa en el foro comunitario de la página
-3. Comparte el proyecto en tus redes sociales
-
-### **Para Desarrolladores**
-1. Haz fork del repositorio
-2. Crea una rama para tu feature (`git checkout -b feature/NuevaCaracteristica`)
-3. Commit tus cambios (`git commit -m 'Agregar nueva característica'`)
-4. Push a la rama (`git push origin feature/NuevaCaracteristica`)
-5. Abre un Pull Request
-
----
-
-## 📝 Licencia
-
-Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
-
----
-
-## 👨‍💻 Autor
-
-**Luis Fernando Burneo**
-- GitHub: [@Lufer19](https://github.com/Lufer19)
-- Proyecto: ASEFIP - Asociación de Estudiantes de Filosofía del Perú
-
----
-
-## 🙏 Agradecimientos
-
-- A todos los estudiantes de filosofía que contribuyen con artículos
-- A los filósofos peruanos que inspiran este proyecto
-- A la comunidad de GitHub por el hosting gratuito
-- A los servicios de Google Forms y CommentBox por sus herramientas
-
----
-
-## 🔮 Roadmap Futuro
-
-- [ ] Implementar asistente de IA filosófico real
-- [ ] Crear base de datos de artículos aprobados
-- [ ] Agregar sistema de autenticación de usuarios
-- [ ] Desarrollar app móvil nativa
-- [ ] Integrar videoconferencias para eventos virtuales
-- [ ] Crear certificaciones oficiales de cursos
-
----
-
-## 📸 Capturas de Pantalla
-
-### Página Principal
-![Página Principal](https://via.placeholder.com/800x400?text=Screenshot+Pending)
-
-### Filosofía Peruana
-![Filosofía Peruana](https://via.placeholder.com/800x400?text=Screenshot+Pending)
-
-### Ejercicios Interactivos
-![Ejercicios](https://via.placeholder.com/800x400?text=Screenshot+Pending)
-
----
-
-## 📈 Estado del Proyecto
-
-**Versión**: 1.0 Beta  
-**Estado**: En desarrollo activo  
-**Última actualización**: Diciembre 2024
-
----
-
-**🇵🇪 Filosofía para transformar el Perú**
+/* ===== DATOS DE ASPIEF — edita SOLO lo que está entre comillas ===== */
+const DATOS={
+CFG:{
+  ig:'https://www.instagram.com/aspief_peru/',
+  fb:'https://www.facebook.com/people/APIEF/61585745674271/',
+  yt:'https://www.youtube.com/@Asefip.2026',
+  agora:'https://lufer19.github.io/agoraperuana/',
+  mail:'aspief.pe@gmail.com',
+  form:'',   // enlace de Formspree para recibir el formulario "Encuentra tu ruta" (opcional)
+  ga:''      // código de Google Analytics, ejemplo G-ABC123XYZ (opcional)
+},
+/* CURSOS Y TALLERES: p:0 = gratis, p:1 = de pago. En "url" puedes poner un enlace de inscripción (Google Forms); si lo dejas vacío, se abre un correo. */
+CUR:[
+  {"id": "lectura", "t": "Taller de lectura de textos filosóficos", "tp": "Taller", "p": 0, "mod": "Virtual", "dur": "4 semanas", "precio": "", "d": "Lectura guiada y discusión de textos clásicos y latinoamericanos.", "g": "intro", "url": ""},
+  {"id": "escritura", "t": "Taller de escritura académica y ensayo", "tp": "Taller", "p": 0, "mod": "Virtual", "dur": "3 semanas", "precio": "", "d": "Cómo estructurar un ensayo filosófico y argumentar por escrito.", "g": "escritura", "url": ""},
+  {"id": "debate", "t": "Taller de argumentación y debate", "tp": "Taller", "p": 0, "mod": "Virtual", "dur": "2 semanas", "precio": "", "d": "Oratoria, lógica informal y debate respetuoso.", "g": "escritura", "url": ""},
+  {"id": "intro", "t": "Introducción a la filosofía", "tp": "Curso", "p": 0, "mod": "Virtual", "dur": "6 semanas", "precio": "", "d": "Problemas y autores fundamentales para quien empieza.", "g": "intro", "url": ""},
+  {"id": "latam", "t": "Filosofía latinoamericana y peruana", "tp": "Curso", "p": 1, "mod": "Virtual en vivo", "dur": "8 semanas", "precio": "Precio por confirmar", "d": "Debates y autores del pensamiento en nuestra región. Con certificado.", "g": "latam", "url": ""},
+  {"id": "articulos", "t": "Cómo investigar y publicar un artículo de filosofía", "tp": "Curso", "p": 1, "mod": "Virtual en vivo", "dur": "6 semanas", "precio": "Precio por confirmar", "d": "Del tema a la revista: método, citación, estructura y envío. Con certificado.", "g": "investigar", "url": ""},
+  {"id": "platon", "t": "Platón y la filosofía política", "tp": "Curso", "p": 1, "mod": "Virtual en vivo", "dur": "8 semanas", "precio": "Precio por confirmar", "d": "Lectura comentada de diálogos políticos con acompañamiento docente. Con certificado.", "g": "politica", "url": ""},
+  {"id": "tesis", "t": "Taller de proyecto de tesis", "tp": "Taller", "p": 1, "mod": "Virtual", "dur": "5 semanas", "precio": "Precio por confirmar", "d": "Plantea tu pregunta, tu marco teórico y tu cronograma con asesoría. Con certificado.", "g": "investigar", "url": ""}
+],
+/* VIDEOS: pega en "url" el enlace de YouTube de cada video (youtube.com/watch?v=... o youtu.be/...). */
+VID:[
+  {"t": "Presentación de ASPIEF", "k": "Institución", "url": ""},
+  {"t": "Diálogos filosóficos", "k": "Conversatorio", "url": ""},
+  {"t": "Taller de lectura: sesión 1", "k": "Taller", "url": ""},
+  {"t": "Conferencia: filosofía política", "k": "Evento", "url": ""},
+  {"t": "Entrevista a investigadores", "k": "Entrevista", "url": ""},
+  {"t": "Resumen de nuestro último evento", "k": "Evento", "url": ""}
+],
+/* NOTICIAS: la primera es real; reemplaza las demás. */
+NEWS:[
+  {"t": "Coloquio nacional sobre Julio Ramón Ribeyro y la filosofía", "d": "El libro «La filosofía del Flaco», de Víctor Hugo Palacios Cruz (USAT), fue presentado en el coloquio realizado en la Casa de la Literatura Peruana, en Lima. Lo organizaron ASEFIP e IPILOF y asistieron docentes de Filosofía de varias universidades.", "fecha": "3 de septiembre de 2026", "fuente": "Noticia · USAT", "url": "https://www.usat.edu.pe/noticias/docente-e-investigador-de-la-usat-es-invitado-como-ponente-magistral-en-el-coloquio-nacional-sobre-julio-ramon-ribeyro/"},
+  {"t": "Inscripciones abiertas a cursos y talleres", "d": "EJEMPLO: reemplaza este texto por tu anuncio real.", "fecha": "", "fuente": "Novedad", "url": ""},
+  {"t": "Únete a la Asociación", "d": "EJEMPLO: convocatoria para estudiantes e investigadores.", "fecha": "", "fuente": "Novedad", "url": ""}
+]
+};
