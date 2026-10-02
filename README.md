@@ -1,39 +1,11 @@
+[README.md](https://github.com/user-attachments/files/32981930/README.md)
+# ASPIEF
+Asociación Peruana de Investigadores y Estudiantes de Filosofía
 
-/* ===== DATOS DE ASPIEF — edita SOLO lo que está entre comillas ===== */
-const DATOS={
-CFG:{
-  ig:'https://www.instagram.com/aspief_peru/',
-  fb:'https://www.facebook.com/people/APIEF/61585745674271/',
-  yt:'https://www.youtube.com/@Asefip.2026',
-  agora:'https://lufer19.github.io/agoraperuana/',
-  mail:'aspief.pe@gmail.com',
-  form:'',   // enlace de Formspree para recibir el formulario "Encuentra tu ruta" (opcional)
-  ga:''      // código de Google Analytics, ejemplo G-ABC123XYZ (opcional)
-},
-/* CURSOS Y TALLERES: p:0 = gratis, p:1 = de pago. En "url" puedes poner un enlace de inscripción (Google Forms); si lo dejas vacío, se abre un correo. */
-CUR:[
-  {"id": "lectura", "t": "Taller de lectura de textos filosóficos", "tp": "Taller", "p": 0, "mod": "Virtual", "dur": "4 semanas", "precio": "", "d": "Lectura guiada y discusión de textos clásicos y latinoamericanos.", "g": "intro", "url": ""},
-  {"id": "escritura", "t": "Taller de escritura académica y ensayo", "tp": "Taller", "p": 0, "mod": "Virtual", "dur": "3 semanas", "precio": "", "d": "Cómo estructurar un ensayo filosófico y argumentar por escrito.", "g": "escritura", "url": ""},
-  {"id": "debate", "t": "Taller de argumentación y debate", "tp": "Taller", "p": 0, "mod": "Virtual", "dur": "2 semanas", "precio": "", "d": "Oratoria, lógica informal y debate respetuoso.", "g": "escritura", "url": ""},
-  {"id": "intro", "t": "Introducción a la filosofía", "tp": "Curso", "p": 0, "mod": "Virtual", "dur": "6 semanas", "precio": "", "d": "Problemas y autores fundamentales para quien empieza.", "g": "intro", "url": ""},
-  {"id": "latam", "t": "Filosofía latinoamericana y peruana", "tp": "Curso", "p": 1, "mod": "Virtual en vivo", "dur": "8 semanas", "precio": "Precio por confirmar", "d": "Debates y autores del pensamiento en nuestra región. Con certificado.", "g": "latam", "url": ""},
-  {"id": "articulos", "t": "Cómo investigar y publicar un artículo de filosofía", "tp": "Curso", "p": 1, "mod": "Virtual en vivo", "dur": "6 semanas", "precio": "Precio por confirmar", "d": "Del tema a la revista: método, citación, estructura y envío. Con certificado.", "g": "investigar", "url": ""},
-  {"id": "platon", "t": "Platón y la filosofía política", "tp": "Curso", "p": 1, "mod": "Virtual en vivo", "dur": "8 semanas", "precio": "Precio por confirmar", "d": "Lectura comentada de diálogos políticos con acompañamiento docente. Con certificado.", "g": "politica", "url": ""},
-  {"id": "tesis", "t": "Taller de proyecto de tesis", "tp": "Taller", "p": 1, "mod": "Virtual", "dur": "5 semanas", "precio": "Precio por confirmar", "d": "Plantea tu pregunta, tu marco teórico y tu cronograma con asesoría. Con certificado.", "g": "investigar", "url": ""}
-],
-/* VIDEOS: pega en "url" el enlace de YouTube de cada video (youtube.com/watch?v=... o youtu.be/...). */
-VID:[
-  {"t": "Presentación de ASPIEF", "k": "Institución", "url": ""},
-  {"t": "Diálogos filosóficos", "k": "Conversatorio", "url": ""},
-  {"t": "Taller de lectura: sesión 1", "k": "Taller", "url": ""},
-  {"t": "Conferencia: filosofía política", "k": "Evento", "url": ""},
-  {"t": "Entrevista a investigadores", "k": "Entrevista", "url": ""},
-  {"t": "Resumen de nuestro último evento", "k": "Evento", "url": ""}
-],
-/* NOTICIAS: la primera es real; reemplaza las demás. */
-NEWS:[
-  {"t": "Coloquio nacional sobre Julio Ramón Ribeyro y la filosofía", "d": "El libro «La filosofía del Flaco», de Víctor Hugo Palacios Cruz (USAT), fue presentado en el coloquio realizado en la Casa de la Literatura Peruana, en Lima. Lo organizaron ASEFIP e IPILOF y asistieron docentes de Filosofía de varias universidades.", "fecha": "3 de septiembre de 2026", "fuente": "Noticia · USAT", "url": "https://www.usat.edu.pe/noticias/docente-e-investigador-de-la-usat-es-invitado-como-ponente-magistral-en-el-coloquio-nacional-sobre-julio-ramon-ribeyro/"},
-  {"t": "Inscripciones abiertas a cursos y talleres", "d": "EJEMPLO: reemplaza este texto por tu anuncio real.", "fecha": "", "fuente": "Novedad", "url": ""},
-  {"t": "Únete a la Asociación", "d": "EJEMPLO: convocatoria para estudiantes e investigadores.", "fecha": "", "fuente": "Novedad", "url": ""}
-]
-};
+Sitio oficial: https://lufer19.github.io/agoraperuana/
+
+- `index.html`: portada de ASPIEF (cursos y talleres, videos, noticias, redes).
+- `datos.js`: aquí se editan videos, cursos, noticias y enlaces. No hay que tocar nada más.
+- Páginas de Ágora Peruana (aprender, glosario, filósofos, ejercicios, recursos...): plataforma de estudio dentro del sitio.
+
+Contacto: aspief.pe@gmail.com
