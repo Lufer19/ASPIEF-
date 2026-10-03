@@ -6,19 +6,20 @@
     <title>Ejercicios y Juegos - ASPIEF</title>
     <style>
         body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 20px; background: #f9f9f9; color: #333; }
-        nav { background: #667eea; padding: 10px; text-align: center; }
+        nav { background: #8a6d12; padding: 10px; text-align: center; }
         nav a { color: white; margin: 0 10px; text-decoration: none; }
         .container { max-width: 800px; margin: 20px auto; padding: 20px; background: white; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        h1 { color: #667eea; text-align: center; }
+        h1 { color: #8a6d12; text-align: center; }
         .juego { text-align: center; }
         .pregunta { font-size: 1.2rem; margin: 20px 0; }
         .opciones { display: flex; flex-direction: column; gap: 10px; }
-        .opcion { padding: 10px; background: #e7f3ff; border: 1px solid #667eea; border-radius: 5px; cursor: pointer; transition: 0.3s; }
-        .opcion:hover { background: #667eea; color: white; }
+        .opcion { padding: 10px; background: #e7f3ff; border: 1px solid #8a6d12; border-radius: 5px; cursor: pointer; transition: 0.3s; }
+        .opcion:hover { background: #8a6d12; color: white; }
         .puntuacion { font-size: 1.5rem; margin: 20px 0; }
-        .btn { padding: 10px 20px; background: #667eea; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        .btn { padding: 10px 20px; background: #8a6d12; color: white; border: none; border-radius: 5px; cursor: pointer; }
         @media (max-width: 768px) { .opciones { flex-direction: column; } }
     </style>
+<link rel="stylesheet" href="aspief.css">
 </head>
 <body>
     <nav>
@@ -109,5 +110,6 @@
 
         cargarPregunta(); // Inicia el juego
     </script>
+<script src="aspief-layout.js"></script>
 </body>
 </html>

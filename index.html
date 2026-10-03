@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es-PE" class="scroll-smooth">
+<html lang="es-PE" class="scroll-smooth motion-reduce:scroll-auto">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,26 +18,29 @@
 <script>tailwind.config={theme:{extend:{fontFamily:{serif:['"Playfair Display"','Georgia','serif']}}}}</script>
 </head>
 <body id="top" class="bg-[#050505] font-sans text-gray-300 antialiased">
+<a href="#contenido" class="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-[60] focus:bg-[#D4AF37] focus:px-4 focus:py-2 focus:text-black">Saltar al contenido</a>
 
 <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-black/85 backdrop-blur">
 <div class="mx-auto flex h-16 max-w-6xl items-center gap-5 px-5">
 <a href="#top" class="flex items-center gap-2 font-serif text-xl font-bold tracking-[.25em] text-white"><img src="assets/logo.png" alt="" class="h-9 w-9 rounded-md bg-white p-0.5" onerror="this.remove()">ASPIEF</a>
-<button id="mn" class="ml-auto text-2xl text-white lg:hidden" aria-label="Menú">☰</button>
+<button id="mn" class="ml-auto text-2xl text-white lg:hidden" aria-label="Menú" aria-expanded="false" aria-controls="ul">☰</button>
 <nav id="ul" class="absolute left-0 right-0 top-16 hidden flex-col bg-black p-5 text-xs font-semibold uppercase tracking-widest lg:static lg:ml-auto lg:flex lg:flex-row lg:items-center lg:bg-transparent lg:p-0">
 <a href="#nosotros" class="px-3 py-3 hover:text-[#D4AF37]">Quiénes somos</a>
 <div class="group relative"><a href="#cursos" class="block px-3 py-3 hover:text-[#D4AF37]">Cursos y talleres ▾</a>
-<div class="absolute left-0 top-full hidden min-w-[210px] border border-white/10 bg-black p-3 text-sm font-normal normal-case tracking-normal lg:group-hover:block"><a data-f="0" href="#cursos" class="block py-1 hover:text-[#D4AF37]">Gratuitos</a><a data-f="1" href="#cursos" class="block py-1 hover:text-[#D4AF37]">De pago</a><a data-f="taller" href="#cursos" class="block py-1 hover:text-[#D4AF37]">Talleres</a><a data-f="curso" href="#cursos" class="block py-1 hover:text-[#D4AF37]">Cursos</a></div></div>
+<div class="absolute left-0 top-full hidden min-w-[210px] border border-white/10 bg-black p-3 text-sm font-normal normal-case tracking-normal lg:group-hover:block lg:group-focus-within:block"><a data-f="0" href="#cursos" class="block py-1 hover:text-[#D4AF37]">Gratuitos</a><a data-f="1" href="#cursos" class="block py-1 hover:text-[#D4AF37]">De pago</a><a data-f="taller" href="#cursos" class="block py-1 hover:text-[#D4AF37]">Talleres</a><a data-f="curso" href="#cursos" class="block py-1 hover:text-[#D4AF37]">Cursos</a></div></div>
 <a href="#programas" class="px-3 py-3 hover:text-[#D4AF37]">Programas</a>
 <div class="group relative"><a href="#noticias" class="block px-3 py-3 hover:text-[#D4AF37]">Al Día ▾</a>
-<div class="absolute left-0 top-full hidden min-w-[210px] border border-white/10 bg-black p-3 text-sm font-normal normal-case tracking-normal lg:group-hover:block"><a href="#noticias" class="block py-1 hover:text-[#D4AF37]">Noticias y actividades</a><a href="#videos" class="block py-1 hover:text-[#D4AF37]">Videos</a><a href="#agora" class="block py-1 hover:text-[#D4AF37]">Ágora Peruana</a></div></div>
+<div class="absolute left-0 top-full hidden min-w-[210px] border border-white/10 bg-black p-3 text-sm font-normal normal-case tracking-normal lg:group-hover:block lg:group-focus-within:block"><a href="#noticias" class="block py-1 hover:text-[#D4AF37]">Noticias y actividades</a><a href="#videos" class="block py-1 hover:text-[#D4AF37]">Videos</a><a href="#agora" class="block py-1 hover:text-[#D4AF37]">Ágora Peruana</a></div></div>
 <a href="#horarios" class="px-3 py-3 hover:text-[#D4AF37]">Horarios</a>
 <a href="#envivo" class="px-3 py-3 hover:text-[#D4AF37]">● En vivo</a>
-<button id="sbt" class="px-3 py-3 text-left" aria-label="Buscar">🔍</button>
+<button id="sbt" class="px-3 py-3 text-left" aria-label="Buscar" aria-controls="sb">🔍</button>
 <a href="#ruta" class="mt-2 bg-[#D4AF37] px-5 py-2.5 text-center text-black lg:ml-2 lg:mt-0">Inscríbete</a>
 </nav></div>
 <div id="sb" class="hidden border-t border-white/10 bg-black p-3"><input id="q" placeholder="Buscar cursos, videos y actividades…" class="mx-auto block w-full max-w-6xl border border-white/20 bg-[#111] p-3 text-white"></div>
 </header>
 
+<main id="contenido">
+<noscript><p class="p-6 pt-24 text-center">Activa JavaScript para ver los cursos y videos. Escríbenos a aspief.pe@gmail.com</p></noscript>
 <section class="flex min-h-screen items-end bg-[radial-gradient(ellipse_at_80%_20%,rgba(212,175,55,.2),transparent_55%)] px-5 pb-20 pt-32">
 <div class="mx-auto w-full max-w-6xl">
 <p class="text-xs uppercase tracking-[.4em] text-[#D4AF37]">Asociación Peruana de Investigadores y Estudiantes de Filosofía</p>
@@ -60,7 +63,7 @@
 <fieldset class="border border-white/15 p-4"><legend class="px-2 text-xs font-bold uppercase tracking-widest text-[#D4AF37]">Género (opcional)</legend><select name="genero" class="w-full bg-[#111] p-3 text-white"><option value="">Prefiero no decir</option><option>Mujer</option><option>Hombre</option><option>Otro</option></select></fieldset>
 <fieldset class="border border-white/15 p-4"><legend class="px-2 text-xs font-bold uppercase tracking-widest text-[#D4AF37]">Te interesa</legend><label class="block py-1"><input type="checkbox" name="int" value="intro"> Empezar en filosofía</label><label class="block py-1"><input type="checkbox" name="int" value="latam"> Filosofía latinoamericana y peruana</label><label class="block py-1"><input type="checkbox" name="int" value="politica"> Política y ética</label><label class="block py-1"><input type="checkbox" name="int" value="investigar"> Investigar y publicar</label><label class="block py-1"><input type="checkbox" name="int" value="escritura"> Escribir y debatir</label></fieldset>
 <fieldset class="border border-white/15 p-4"><legend class="px-2 text-xs font-bold uppercase tracking-widest text-[#D4AF37]">Prefieres</legend><label class="block py-1"><input type="radio" name="pago" value="0" checked> Solo gratuitos</label><label class="block py-1"><input type="radio" name="pago" value="1"> También de pago</label></fieldset>
-<fieldset class="border border-white/15 p-4 md:col-span-2"><legend class="px-2 text-xs font-bold uppercase tracking-widest text-[#D4AF37]">Correo (opcional, para avisarte de nuevos cursos)</legend><input type="email" name="correo" placeholder="tucorreo@ejemplo.com" class="w-full bg-[#111] p-3 text-white"><label class="mt-3 block text-sm"><input type="checkbox" name="ok" required> Acepto que ASPIEF use estas respuestas para mejorar su oferta y contactarme si dejé mi correo.</label></fieldset>
+<fieldset class="border border-white/15 p-4 md:col-span-2"><legend class="px-2 text-xs font-bold uppercase tracking-widest text-[#D4AF37]">Correo (opcional, para avisarte de nuevos cursos)</legend><input type="email" name="correo" placeholder="tucorreo@ejemplo.com" class="w-full bg-[#111] p-3 text-white"><label class="mt-3 block text-sm"><input type="checkbox" name="ok" required> Acepto que ASPIEF use estas respuestas para mejorar su oferta y contactarme si dejé mi correo.</label><small class="mt-2 block text-xs text-gray-400">Usamos tu edad, género e intereses solo para recomendarte cursos y mejorar nuestra oferta. Para borrar tus datos, escribe a aspief.pe@gmail.com.</small></fieldset>
 <div class="md:col-span-2"><button type="submit" class="bg-[#D4AF37] px-8 py-3 text-sm font-bold uppercase tracking-widest text-black">Ver mis recomendaciones</button></div>
 </form><div id="rs" class="mt-8"></div></div></section>
 
@@ -84,7 +87,7 @@
 <section id="horarios" class="scroll-mt-16 bg-[#0b0b0b] py-20"><div class="mx-auto max-w-6xl px-5">
 <span class="text-xs uppercase tracking-[.4em] text-[#D4AF37]">Programación</span><h2 class="mb-6 font-serif text-3xl font-bold uppercase text-white md:text-5xl">Horarios</h2>
 <div class="overflow-x-auto"><table class="w-full text-left text-sm"><thead><tr class="border-b border-[#D4AF37]/50 text-xs uppercase tracking-widest text-[#D4AF37]"><th class="p-3">Día</th><th class="p-3">Hora (Lima)</th><th class="p-3">Actividad</th></tr></thead><tbody id="tb"></tbody></table></div>
-<p class="mt-3 text-xs text-gray-500">Horarios de ejemplo: reemplázalos por los reales.</p></div></section>
+<p class="mt-3 text-xs text-gray-400">Horarios de ejemplo: reemplázalos por los reales.</p></div></section>
 
 <section id="noticias" class="scroll-mt-16 py-20"><div class="mx-auto max-w-6xl px-5">
 <span class="text-xs uppercase tracking-[.4em] text-[#D4AF37]">Al día</span><h2 class="mb-6 font-serif text-3xl font-bold uppercase text-white md:text-5xl">Noticias y actividades</h2>
@@ -110,12 +113,13 @@
 <details class="border-b border-white/10 py-4"><summary class="cursor-pointer font-bold text-white">¿Los cursos son gratuitos?</summary><p class="mt-2">Hay talleres y cursos gratuitos, y cursos de pago con certificado.</p></details>
 <details class="border-b border-white/10 py-4"><summary class="cursor-pointer font-bold text-white">¿Cómo me inscribo?</summary><p class="mt-2">Con el botón "Inscribirme" de cada curso o escribiendo a aspief.pe@gmail.com.</p></details></div></section>
 
+</main>
 <footer class="border-t border-white/10 bg-black py-12 text-sm"><div class="mx-auto grid max-w-6xl gap-8 px-5 sm:grid-cols-2 lg:grid-cols-4">
-<div><b class="font-serif text-xl tracking-[.25em] text-white">ASPIEF</b><p class="mt-2 text-gray-500">Asociación Peruana de Investigadores y Estudiantes de Filosofía · Lima, Perú<br><a href="mailto:aspief.pe@gmail.com" class="hover:text-[#D4AF37]">aspief.pe@gmail.com</a></p></div>
+<div><b class="font-serif text-xl tracking-[.25em] text-white">ASPIEF</b><p class="mt-2 text-gray-400">Asociación Peruana de Investigadores y Estudiantes de Filosofía · Lima, Perú<br><a href="mailto:aspief.pe@gmail.com" class="hover:text-[#D4AF37]">aspief.pe@gmail.com</a></p></div>
 <div><h4 class="mb-2 text-xs font-bold uppercase tracking-widest text-[#D4AF37]">Más información</h4><a class="block py-0.5 hover:text-[#D4AF37]" href="#faq">Preguntas frecuentes</a><a class="block py-0.5 hover:text-[#D4AF37]" href="mailto:aspief.pe@gmail.com">Contáctanos</a><a class="block py-0.5 hover:text-[#D4AF37]" href="enviar-articulo.html">Envía tu artículo</a></div>
 <div><h4 class="mb-2 text-xs font-bold uppercase tracking-widest text-[#D4AF37]">Mapa de sitio</h4><a class="block py-0.5 hover:text-[#D4AF37]" href="#cursos">Cursos y talleres</a><a class="block py-0.5 hover:text-[#D4AF37]" href="#programas">Programas</a><a class="block py-0.5 hover:text-[#D4AF37]" href="#noticias">Al Día</a><a class="block py-0.5 hover:text-[#D4AF37]" href="#horarios">Horarios</a><a class="block py-0.5 hover:text-[#D4AF37]" href="#envivo">En vivo</a></div>
 <div><h4 class="mb-2 text-xs font-bold uppercase tracking-widest text-[#D4AF37]">Síguenos</h4><a data-s="ig" target="_blank" rel="noopener" href="#" class="block py-0.5 hover:text-[#D4AF37]">Instagram</a><a data-s="fb" target="_blank" rel="noopener" href="#" class="block py-0.5 hover:text-[#D4AF37]">Facebook</a><a data-s="yt" target="_blank" rel="noopener" href="#" class="block py-0.5 hover:text-[#D4AF37]">YouTube</a></div>
-</div><p class="mt-8 text-center text-xs text-gray-600">© 2026 ASPIEF</p></footer>
+</div><p class="mt-8 text-center text-xs text-gray-500">© 2026 ASPIEF</p></footer>
 
 <script>
 /* ===== CONFIGURACIÓN (edita solo lo que está entre comillas) ===== */
@@ -132,26 +136,28 @@ const CUR=[
 ['Taller de proyecto de tesis','Taller',1,'Virtual','5 semanas','Plantea tu pregunta, tu marco teórico y tu cronograma con asesoría. Con certificado.','investigar','']];
 const PROG=[['Diálogos Filosóficos','Conversatorios con investigadores.'],['Leer para Pensar','Lectura guiada de textos clave.'],['Investigadores en Voz Alta','Presentación de investigaciones en curso.'],['Los Estudiantes Opinan','Debates y miradas jóvenes.']];
 const HOR=[['Lunes','7:00 p.m.','Diálogos Filosóficos'],['Martes','7:00 p.m.','Taller de lectura'],['Miércoles','8:00 p.m.','Investigadores en Voz Alta'],['Jueves','7:00 p.m.','Curso (en vivo)'],['Viernes','8:00 p.m.','Los Estudiantes Opinan'],['Sábado','5:00 p.m.','Conferencias y seminarios']];
-const AGORA=[['aprender','Aprender filosofía'],['filosofia-peruana','Filosofía peruana'],['filosofos','Filósofos'],['glosario','Glosario'],['linea-tiempo','Línea del tiempo'],['ejercicios','Ejercicios'],['juegos','Juegos'],['recursos','Recursos'],['articulos','Artículos'],['investigar','Investigar'],['comunidad','Comunidad'],['enviar-articulo','Envía tu artículo'],['podcast','Podcast']];
+const AGORA=[['aprender','Aprender filosofía'],['filosofos','Filósofos'],['glosario','Glosario'],['linea-tiempo','Línea del tiempo'],['ejercicios','Ejercicios'],['recursos','Recursos'],['articulos','Artículos'],['investigar','Investigar'],['comunidad','Comunidad'],['enviar-articulo','Envía tu artículo'],['podcast','Podcast']];
 /* ================================================================ */
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 const E=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const CARD='buscable group overflow-hidden border border-white/10 bg-white/[.03] transition hover:-translate-y-1 hover:border-[#D4AF37]/60';
 const GOLD='bg-[#D4AF37] text-black';
+const safe=u=>/^(https?:|mailto:)/i.test(u||'')?u:'#';
+const cssurl=u=>'url('+encodeURI(u).replace(/[()'"]/g,c=>'%'+c.charCodeAt(0).toString(16))+')';
 // redes
 $$('[data-s]').forEach(a=>{const u=CFG[a.dataset.s];if(u)a.href=u;else a.classList.add('hidden')});
 if(CFG.ga){const s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id='+CFG.ga;document.head.append(s);window.dataLayer=[];window.gtag=function(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config',CFG.ga)}
 // menú móvil y buscador
-$('#mn').onclick=()=>{$('#ul').classList.toggle('hidden');$('#ul').classList.toggle('flex')};
-$$('#ul a').forEach(a=>a.addEventListener('click',()=>{if(innerWidth<1024){$('#ul').classList.add('hidden');$('#ul').classList.remove('flex')}}));
+$('#mn').onclick=()=>{$('#ul').classList.toggle('hidden');$('#ul').classList.toggle('flex');$('#mn').setAttribute('aria-expanded',$('#ul').classList.contains('flex'))};
+$$('#ul a').forEach(a=>a.addEventListener('click',()=>{if(innerWidth<1024){$('#ul').classList.add('hidden');$('#ul').classList.remove('flex');$('#mn').setAttribute('aria-expanded','false')}}));
 $('#sbt').onclick=()=>{$('#sb').classList.toggle('hidden');$('#q').focus()};
-$('#q').oninput=e=>{const v=e.target.value.toLowerCase();$$('.buscable').forEach(c=>c.classList.toggle('hidden',!!v&&!c.textContent.toLowerCase().includes(v)));if(v)location.hash='#cursos'};
+let tq,bus=false;$('#q').oninput=e=>{clearTimeout(tq);tq=setTimeout(()=>{const v=e.target.value.toLowerCase();$$('.buscable').forEach(c=>c.classList.toggle('hidden',!!v&&!c.textContent.toLowerCase().includes(v)));if(v&&!bus){location.hash='#cursos'}bus=!!v},200)};
 // cursos y talleres
 $('#nc').textContent=CUR.length;
-$('#gc').innerHTML=CUR.map(c=>`<article class="${CARD} flex flex-col" data-t="${c[1].toLowerCase()}" data-p="${c[2]}"><div class="p-5 pb-0"><span class="px-2 py-1 text-[11px] font-bold uppercase ${c[2]?GOLD:'bg-emerald-700 text-white'}">${c[2]?'De pago':'Gratis'}</span></div><div class="flex flex-1 flex-col p-5"><h3 class="font-serif text-xl text-white">${E(c[0])}</h3><p class="mt-2 text-sm">${E(c[5])}</p><small class="mt-2 text-gray-500">${E(c[3])} · ${E(c[4])}${c[2]?' · Precio por confirmar':''}</small><a class="mt-auto pt-4 text-sm font-bold text-[#D4AF37]" ${c[7]?`href="${E(c[7])}" target="_blank" rel="noopener"`:`href="mailto:${CFG.mail}?subject=${encodeURIComponent('Inscripción: '+c[0])}"`}>Inscribirme →</a></div></article>`).join('');
+$('#gc').innerHTML=CUR.map(c=>`<article class="${CARD} flex flex-col" data-t="${c[1].toLowerCase()}" data-p="${c[2]}"><div class="p-5 pb-0"><span class="px-2 py-1 text-[11px] font-bold uppercase ${c[2]?GOLD:'bg-emerald-700 text-white'}">${c[2]?'De pago':'Gratis'}</span></div><div class="flex flex-1 flex-col p-5"><h3 class="font-serif text-xl text-white">${E(c[0])}</h3><p class="mt-2 text-sm">${E(c[5])}</p><small class="mt-2 text-gray-400">${E(c[3])} · ${E(c[4])}${c[2]?' · Precio por confirmar':''}</small><a class="mt-auto pt-4 text-sm font-bold text-[#D4AF37]" ${c[7]?`href="${E(safe(c[7]))}" target="_blank" rel="noopener"`:`href="mailto:${CFG.mail}?subject=${encodeURIComponent('Inscripción: '+c[0])}"`}>Inscribirme →</a></div></article>`).join('');
 const CH=[['','Todos'],['0','Gratuitos'],['1','De pago'],['taller','Talleres'],['curso','Cursos']];
-$('#chips').innerHTML=CH.map((x,i)=>`<button data-v="${x[0]}" class="border border-white/30 px-4 py-2 ${i?'':GOLD}">${x[1]}</button>`).join('');
-function filtrar(v){$$('#chips button').forEach(b=>{const on=b.dataset.v==v;b.className='border border-white/30 px-4 py-2 '+(on?GOLD:'')});$$('#gc article').forEach(c=>c.style.display=!v||c.dataset.p==v||c.dataset.t==v?'':'none')}
+$('#chips').innerHTML=CH.map((x,i)=>`<button data-v="${x[0]}" aria-pressed="${!i}" class="border border-white/30 px-4 py-2 ${i?'':GOLD}">${x[1]}</button>`).join('');
+function filtrar(v){$$('#chips button').forEach(b=>{const on=b.dataset.v==v;b.setAttribute('aria-pressed',on);b.className='border border-white/30 px-4 py-2 '+(on?GOLD:'')});$$('#gc article').forEach(c=>c.style.display=!v||c.dataset.p==v||c.dataset.t==v?'':'none')}
 $$('#chips button').forEach(b=>b.onclick=()=>filtrar(b.dataset.v));
 $$('[data-f]').forEach(a=>a.addEventListener('click',()=>filtrar(a.dataset.f)));
 // programas, horarios y Ágora
@@ -163,7 +169,7 @@ const vid=u=>((u||'').match(/(?:youtu\.be\/|v=|embed\/|shorts\/|live\/)([\w-]{11
 if(vid(CFG.live))$('#lv').innerHTML=`<iframe class="h-full w-full" src="https://www.youtube-nocookie.com/embed/${vid(CFG.live)}" allowfullscreen></iframe>`;
 // videos de YouTube automáticos (título por noembed.com, miniatura HD, clic = reproductor)
 $$('.video-card-automatica').forEach(async d=>{const id=vid(d.dataset.url);if(!id){d.remove();return}
-d.className+=' '+CARD+' cursor-pointer';
+d.className+=' '+CARD+' cursor-pointer';d.tabIndex=0;d.setAttribute('role','button');d.setAttribute('aria-label','Reproducir video');d.onkeydown=e=>{if(e.key=='Enter'||e.key==' '){e.preventDefault();d.click()}};
 d.innerHTML=`<div class="relative aspect-video bg-black"><img src="https://i.ytimg.com/vi/${id}/maxresdefault.jpg" alt="" loading="lazy" class="h-full w-full object-cover" onload="if(this.naturalWidth<200)this.src='https://i.ytimg.com/vi/${id}/hqdefault.jpg'"><span class="absolute inset-0 m-auto flex h-14 w-14 items-center justify-center rounded-full text-xl ${GOLD}">▶</span></div><h3 class="p-4 font-serif text-lg text-white">Cargando…</h3>`;
 d.onclick=()=>{d.firstElementChild.innerHTML=`<iframe class="h-full w-full" src="https://www.youtube-nocookie.com/embed/${id}?autoplay=1" allow="autoplay;encrypted-media;fullscreen" allowfullscreen></iframe>`;d.onclick=null};
 const h=d.querySelector('h3');try{const r=await fetch('https://noembed.com/embed?url='+encodeURIComponent('https://www.youtube.com/watch?v='+id));const j=await r.json();h.textContent=j.title||d.dataset.titulo||'Video'}catch(e){h.textContent=d.dataset.titulo||'Ver video'}});
@@ -174,9 +180,9 @@ const ART=['<rect width="400" height="200" fill="#1a1a1a"/><path d="M40 70 200 2
 '<rect width="400" height="200" fill="#1c1c1c"/>'+[70,200,330].map(x=>`<path d="M${x-45} 190V90a45 45 0 0 1 90 0V190" fill="none" stroke="#999" stroke-width="8"/>`).join(''),
 '<rect width="400" height="200" fill="#141414"/>'+[90,65,40,18].map((r,i)=>`<circle cx="200" cy="100" r="${r}" fill="none" stroke="${i%2?'#aaa':'#666'}" stroke-width="5"/>`).join('')];
 const art=i=>`url("data:image/svg+xml,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice">'+ART[i%4]+'</svg>')}")`;
-$$('.evento-automatico').forEach((d,i)=>{const u=d.dataset.url||'#',b=/instagram/.test(u)?'Ver en Instagram':/facebook|fb\.com/.test(u)?'Ver en Facebook':'Leer más';
+$$('.evento-automatico').forEach((d,i)=>{const u=safe(d.dataset.url),b=/instagram/.test(u)?'Ver en Instagram':/facebook|fb\.com/.test(u)?'Ver en Facebook':'Leer más';
 d.className+=' '+CARD+' flex flex-col';
-d.innerHTML=`<div class="h-44 bg-cover bg-center grayscale" style="background-image:${d.dataset.img?`url('${E(d.dataset.img)}')`:art(i)}"></div><div class="flex flex-1 flex-col p-5"><small class="text-xs uppercase tracking-widest text-[#D4AF37]">${E(d.dataset.fecha||'')}</small><h3 class="mt-1 font-serif text-xl text-white">${E(d.dataset.titulo||'Actividad')}</h3><a href="${E(u)}" target="_blank" rel="noopener" class="mt-5 inline-block self-start px-5 py-2 text-xs font-bold uppercase tracking-widest ${GOLD}">${b} →</a></div>`});
+d.innerHTML=`<div class="h-44 bg-cover bg-center grayscale" style="background-image:${d.dataset.img?E(cssurl(d.dataset.img)):art(i)}"></div><div class="flex flex-1 flex-col p-5"><small class="text-xs uppercase tracking-widest text-[#D4AF37]">${E(d.dataset.fecha||'')}</small><h3 class="mt-1 font-serif text-xl text-white">${E(d.dataset.titulo||'Actividad')}</h3><a href="${E(u)}" target="_blank" rel="noopener" class="mt-5 inline-block self-start px-5 py-2 text-xs font-bold uppercase tracking-widest ${GOLD}">${b} →</a></div>`});
 // formulario "Encuentra tu ruta"
 $('#fm').onsubmit=ev=>{ev.preventDefault();const f=new FormData(ev.target),it=f.getAll('int'),pay=f.get('pago')=='1';
 const r=CUR.map(c=>({c,s:(it.includes(c[6])?2:0)+(c[2]&&!pay?-5:0)+(!c[2]?.5:0)})).filter(x=>x.s>0).sort((a,b)=>b.s-a.s).slice(0,3);
@@ -184,8 +190,9 @@ $('#rs').innerHTML='<h3 class="font-serif text-2xl text-white">Te recomendamos e
 const d={edad:f.get('edad'),genero:f.get('genero')||'no indica',intereses:it.join(', '),pago:pay?'gratis y pago':'solo gratis',correo:f.get('correo')||''};
 try{localStorage.setItem('aspief_perfil',JSON.stringify(d))}catch(e){}
 if(window.gtag)gtag('event','perfil_audiencia',{edad:d.edad,genero:d.genero});
-if(CFG.form)fetch(CFG.form,{method:'POST',mode:'no-cors',body:f}).catch(()=>{});
-else $('#rs').insertAdjacentHTML('beforeend',`<p class="mt-6"><a class="inline-block px-6 py-3 text-sm font-bold uppercase ${GOLD}" href="mailto:${CFG.mail}?subject=${encodeURIComponent('Perfil de interés')}&body=${encodeURIComponent(Object.entries(d).map(([k,v])=>k+': '+v).join('\n'))}">Enviar mis respuestas a ASPIEF</a></p>`)};
+const plan=`<p class="mt-6"><a class="inline-block px-6 py-3 text-sm font-bold uppercase ${GOLD}" href="mailto:${CFG.mail}?subject=${encodeURIComponent('Perfil de interés')}&body=${encodeURIComponent(Object.entries(d).map(([k,v])=>k+': '+v).join('\n'))}">Enviar mis respuestas a ASPIEF</a></p>`;
+if(CFG.form)fetch(CFG.form,{method:'POST',mode:'no-cors',body:f}).then(()=>$('#rs').insertAdjacentHTML('beforeend','<p class="mt-6 text-[#D4AF37]">¡Gracias! Recibimos tus respuestas.</p>')).catch(()=>$('#rs').insertAdjacentHTML('beforeend',plan));
+else $('#rs').insertAdjacentHTML('beforeend',plan)};
 </script>
 </body>
 </html>
