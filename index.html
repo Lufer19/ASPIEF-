@@ -1,118 +1,191 @@
 <!DOCTYPE html>
-<html lang="es-PE">
+<html lang="es-PE" class="scroll-smooth">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ASPIEF | Asociación Peruana de Investigadores y Estudiantes de Filosofía</title>
 <meta name="description" content="ASPIEF reúne a investigadores y estudiantes de filosofía del Perú: cursos y talleres gratuitos y de pago, videos, conferencias y noticias.">
-<meta name="keywords" content="ASPIEF, filosofía Perú, cursos de filosofía, talleres de filosofía, asociación de filosofía, estudiantes de filosofía, investigadores de filosofía">
 <meta name="robots" content="index,follow">
-<link rel="canonical" href="https://lufer19.github.io/agoraperuana/">
-<link rel="icon" href="assets/logo.png">
+<link rel="canonical" href="https://lufer19.github.io/aspief/">
 <meta property="og:type" content="website"><meta property="og:locale" content="es_PE"><meta property="og:site_name" content="ASPIEF">
-<meta property="og:title" content="ASPIEF | Filosofía en el Perú"><meta property="og:description" content="Cursos, talleres, videos y noticias de la Asociación Peruana de Investigadores y Estudiantes de Filosofía.">
-<meta property="og:url" content="https://lufer19.github.io/agoraperuana/"><meta property="og:image" content="https://lufer19.github.io/agoraperuana/assets/portada.jpg">
-<meta name="twitter:card" content="summary_large_image">
-<script src="datos.js"></script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"EducationalOrganization","name":"ASPIEF","alternateName":"Asociación Peruana de Investigadores y Estudiantes de Filosofía","url":"https://lufer19.github.io/agoraperuana/","logo":"https://lufer19.github.io/agoraperuana/assets/logo.png","email":"aspief.pe@gmail.com","areaServed":"PE","sameAs":["https://www.instagram.com/aspief_peru/","https://www.facebook.com/people/APIEF/61585745674271/","https://www.youtube.com/@Asefip.2026"]}</script>
-<style>
-:root{--k:#1b0f10;--b:#3b1f20;--am:#e8a010;--w:#faf7f4;--g:#b9a9a3}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--w);color:var(--k);font:17px/1.6 'Helvetica Neue',Arial,sans-serif}
-a{color:inherit;text-decoration:none}h1,h2,h3{margin:0;font-weight:700;letter-spacing:-.5px}.w{max-width:1200px;margin:auto;padding:0 22px}
-nav{position:fixed;top:0;left:0;right:0;z-index:30;background:#1b0f10e6;backdrop-filter:blur(8px);color:#fff}nav .w{display:flex;align-items:center;gap:26px;height:64px}
-.br{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:3px}.br i{width:38px;height:38px;border-radius:8px;background:#fff url(assets/logo.png) center/88% no-repeat}
-nav ul{display:flex;gap:22px;list-style:none;margin:0 0 0 auto;padding:0;font-size:13px;text-transform:uppercase;letter-spacing:1.5px}nav li a:hover{color:var(--am)}
-.btn{display:inline-block;background:var(--am);color:var(--k);padding:12px 26px;font:700 13px Arial;letter-spacing:1.5px;text-transform:uppercase;border:0;cursor:pointer}.btn.o{background:none;border:1px solid #fff;color:#fff}
-#mn{display:none;background:none;border:0;color:#fff;font-size:24px;margin-left:auto}
-.hero{background:var(--k) url(assets/logo.png) 85% 50%/min(520px,70vw) no-repeat;color:#fff;min-height:100vh;display:flex;align-items:flex-end;padding:120px 0 70px;position:relative}
-.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#1b0f10 35%,#1b0f1099)}.hero .w{position:relative}
-.hero small{letter-spacing:4px;text-transform:uppercase;color:var(--am);font-size:12px}.hero h1{font-size:clamp(40px,8vw,104px);line-height:.98;text-transform:uppercase;margin:14px 0 22px;max-width:900px}.hero p{max-width:560px;color:var(--g);font-size:19px}
-.st{display:flex;gap:40px;margin-top:40px;flex-wrap:wrap}.st b{display:block;font-size:34px;color:var(--am)}.st span{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--g)}
-.band{height:46vh;min-height:260px;background:#d6d0cc url(assets/portada.jpg) center/contain no-repeat;background-attachment:fixed}
-section{padding:90px 0}section.d{background:var(--k);color:#fff}section.d .tx p{color:var(--g)}
-.kick{font-size:12px;letter-spacing:4px;text-transform:uppercase;color:var(--am)}h2{font-size:clamp(30px,5vw,56px);text-transform:uppercase;margin:8px 0 28px;line-height:1}
-.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}.chips button{border:1px solid currentColor;background:none;color:inherit;padding:8px 18px;font:600 12px Arial;letter-spacing:1px;text-transform:uppercase;cursor:pointer}.chips button.on{background:var(--am);color:var(--k);border-color:var(--am)}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:22px}
-.card{background:#fff;color:var(--k);display:block;text-align:left;border:0;padding:0;font:inherit;cursor:pointer;position:relative;transition:transform .25s}.card:hover{transform:translateY(-6px)}
-.d .card{background:#2a1a1b;color:#fff}.im{height:150px;background:linear-gradient(135deg,var(--b),#6b3a2a);color:#fff;display:flex;align-items:flex-end;padding:14px;font:700 12px Arial;letter-spacing:1.5px;text-transform:uppercase;position:relative;overflow:hidden}
-.im::after{content:"";position:absolute;right:-18px;top:-14px;width:120px;height:120px;background:url(assets/logo.png) center/contain no-repeat;filter:invert(1);opacity:.14}
-.vid .im::before{content:"▶";position:absolute;inset:0;margin:auto;width:52px;height:52px;border-radius:50%;background:#000a;display:flex;align-items:center;justify-content:center;z-index:1}
-.tx{padding:16px}.tx h3{font-size:18px;line-height:1.25}.tx p{margin:8px 0;font-size:14px;color:#6b5a58}.tx small{color:#8a7a77}.lk{display:block;margin-top:12px;font:700 13px Arial;color:var(--am)}
-.bd{position:absolute;top:12px;left:12px;background:#2b7a4b;color:#fff;padding:3px 10px;font:700 11px Arial;z-index:2}.bd.p{background:var(--am);color:var(--k)}
-form{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}form fieldset{border:1px solid #ffffff33;padding:14px}form legend{font:700 12px Arial;letter-spacing:2px;text-transform:uppercase;color:var(--am)}form label{display:block;font-size:15px;padding:3px 0}form select,form input[type=email]{width:100%;padding:10px;font:16px Arial}.full{grid-column:1/-1}
-#rs{margin-top:26px}#rs .grid{margin-top:14px}
-.soc{display:flex;gap:14px;flex-wrap:wrap}details{border-bottom:1px solid #d9cfc9;padding:16px 0}summary{cursor:pointer;font-weight:700}
-#md{display:none;position:fixed;inset:0;background:#000d;z-index:60;align-items:center;justify-content:center;padding:18px}#md>div{width:min(900px,100%)}.fr{aspect-ratio:16/9;background:#000;color:#fff;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px}.fr iframe{width:100%;height:100%;border:0}
-footer{background:var(--k);color:#b9a9a3;padding:50px 0;font-size:14px}footer a:hover{color:var(--am)}
-@media(max-width:860px){nav ul{display:none;position:absolute;top:64px;left:0;right:0;background:var(--k);flex-direction:column;padding:16px 22px;margin:0}nav ul.open{display:flex}#mn{display:block}nav .btn{display:none}.band{background-attachment:scroll}}
-.lnk{display:inline-block;margin:0 8px 8px 0;padding:10px 18px;border:1px solid var(--b);font:600 13px Arial;text-transform:uppercase;letter-spacing:1px}.lnk:hover{background:var(--am)}
-</style>
+<meta property="og:title" content="ASPIEF | Filosofía en el Perú"><meta property="og:url" content="https://lufer19.github.io/aspief/">
+<meta property="og:description" content="Cursos, talleres, videos y noticias de la Asociación Peruana de Investigadores y Estudiantes de Filosofía.">
+<link rel="icon" href="assets/logo.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"EducationalOrganization","name":"ASPIEF","alternateName":"Asociación Peruana de Investigadores y Estudiantes de Filosofía","url":"https://lufer19.github.io/aspief/","email":"aspief.pe@gmail.com","areaServed":"PE","sameAs":["https://www.instagram.com/aspief_peru/","https://www.facebook.com/people/APIEF/61585745674271/","https://www.youtube.com/@Asefip.2026"]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{fontFamily:{serif:['"Playfair Display"','Georgia','serif']}}}}</script>
 </head>
-<body>
-<nav><div class="w"><a class="br" href="#top"><i></i>ASPIEF</a><button id="mn" aria-label="Menú">☰</button>
-<ul id="ul"><li><a href="#cursos">Cursos y talleres</a></li><li><a href="#ruta">Tu ruta</a></li><li><a href="#videos">Videos</a></li><li><a href="#noticias">Noticias</a></li><li><a href="#agora">Ágora</a></li><li><a href="#nosotros">Nosotros</a></li></ul>
-<a class="btn" href="#ruta">Inscríbete</a></div></nav>
-<header class="hero" id="top"><div class="w"><small>Asociación Peruana de Investigadores y Estudiantes de Filosofía</small>
-<h1>Pensar el Perú.<br>Pensar el mundo.</h1><p>Cursos, talleres, conferencias y videos de filosofía hechos por investigadores y estudiantes. Gratis y de pago, para todas las edades.</p>
-<p><a class="btn" href="#cursos">Ver cursos y talleres</a> <a class="btn o" href="#videos">Ver videos</a></p>
-<div class="st"><div><b id="nc">8</b><span>Cursos y talleres</span></div><div><b>100%</b><span>Virtual</span></div><div><b>Gratis</b><span>y con certificado</span></div></div></div></header>
-<div class="band" role="img" aria-label="ASPIEF, Asociación Peruana de Investigadores y Estudiantes de Filosofía"></div>
+<body id="top" class="bg-[#050505] font-sans text-gray-300 antialiased">
 
-<section id="cursos"><div class="w"><span class="kick">Formación</span><h2>Cursos y talleres</h2>
-<div class="chips" data-f="c"><button class="on" data-v="">Todos</button><button data-v="0">Gratuitos</button><button data-v="1">De pago</button><button data-v="taller">Talleres</button><button data-v="curso">Cursos</button></div>
-<div class="grid" id="gc"></div></div></section>
+<header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-black/85 backdrop-blur">
+<div class="mx-auto flex h-16 max-w-6xl items-center gap-5 px-5">
+<a href="#top" class="flex items-center gap-2 font-serif text-xl font-bold tracking-[.25em] text-white"><img src="assets/logo.png" alt="" class="h-9 w-9 rounded-md bg-white p-0.5" onerror="this.remove()">ASPIEF</a>
+<button id="mn" class="ml-auto text-2xl text-white lg:hidden" aria-label="Menú">☰</button>
+<nav id="ul" class="absolute left-0 right-0 top-16 hidden flex-col bg-black p-5 text-xs font-semibold uppercase tracking-widest lg:static lg:ml-auto lg:flex lg:flex-row lg:items-center lg:bg-transparent lg:p-0">
+<a href="#nosotros" class="px-3 py-3 hover:text-[#D4AF37]">Quiénes somos</a>
+<div class="group relative"><a href="#cursos" class="block px-3 py-3 hover:text-[#D4AF37]">Cursos y talleres ▾</a>
+<div class="absolute left-0 top-full hidden min-w-[210px] border border-white/10 bg-black p-3 text-sm font-normal normal-case tracking-normal lg:group-hover:block"><a data-f="0" href="#cursos" class="block py-1 hover:text-[#D4AF37]">Gratuitos</a><a data-f="1" href="#cursos" class="block py-1 hover:text-[#D4AF37]">De pago</a><a data-f="taller" href="#cursos" class="block py-1 hover:text-[#D4AF37]">Talleres</a><a data-f="curso" href="#cursos" class="block py-1 hover:text-[#D4AF37]">Cursos</a></div></div>
+<a href="#programas" class="px-3 py-3 hover:text-[#D4AF37]">Programas</a>
+<div class="group relative"><a href="#noticias" class="block px-3 py-3 hover:text-[#D4AF37]">Al Día ▾</a>
+<div class="absolute left-0 top-full hidden min-w-[210px] border border-white/10 bg-black p-3 text-sm font-normal normal-case tracking-normal lg:group-hover:block"><a href="#noticias" class="block py-1 hover:text-[#D4AF37]">Noticias y actividades</a><a href="#videos" class="block py-1 hover:text-[#D4AF37]">Videos</a><a href="#agora" class="block py-1 hover:text-[#D4AF37]">Ágora Peruana</a></div></div>
+<a href="#horarios" class="px-3 py-3 hover:text-[#D4AF37]">Horarios</a>
+<a href="#envivo" class="px-3 py-3 hover:text-[#D4AF37]">● En vivo</a>
+<button id="sbt" class="px-3 py-3 text-left" aria-label="Buscar">🔍</button>
+<a href="#ruta" class="mt-2 bg-[#D4AF37] px-5 py-2.5 text-center text-black lg:ml-2 lg:mt-0">Inscríbete</a>
+</nav></div>
+<div id="sb" class="hidden border-t border-white/10 bg-black p-3"><input id="q" placeholder="Buscar cursos, videos y actividades…" class="mx-auto block w-full max-w-6xl border border-white/20 bg-[#111] p-3 text-white"></div>
+</header>
 
-<section class="d" id="ruta"><div class="w"><span class="kick">Hecho para ti</span><h2>Encuentra tu ruta</h2>
-<p style="max-width:640px;color:#b9a9a3">Cuéntanos qué te interesa y te recomendamos por dónde empezar. Tus respuestas nos ayudan a crear mejores cursos.</p>
-<form id="fm">
-<fieldset><legend>Tu edad</legend><select name="edad" required><option value="">Elige…</option><option>14–17</option><option>18–24</option><option>25–34</option><option>35–49</option><option>50 o más</option></select></fieldset>
-<fieldset><legend>Género (opcional)</legend><select name="genero"><option value="">Prefiero no decir</option><option>Mujer</option><option>Hombre</option><option>Otro</option></select></fieldset>
-<fieldset><legend>Te interesa</legend><label><input type="checkbox" name="int" value="intro"> Empezar en filosofía</label><label><input type="checkbox" name="int" value="latam"> Filosofía latinoamericana y peruana</label><label><input type="checkbox" name="int" value="politica"> Política y ética</label><label><input type="checkbox" name="int" value="investigar"> Investigar y publicar</label><label><input type="checkbox" name="int" value="escritura"> Escribir y debatir</label></fieldset>
-<fieldset><legend>Prefieres</legend><label><input type="radio" name="pago" value="0" checked> Solo gratuitos</label><label><input type="radio" name="pago" value="1"> También de pago</label></fieldset>
-<fieldset class="full"><legend>Correo (opcional, para avisarte de nuevos cursos)</legend><input type="email" name="correo" placeholder="tucorreo@ejemplo.com"><label style="margin-top:8px"><input type="checkbox" name="ok" required> Acepto que ASPIEF use estas respuestas para mejorar su oferta y contactarme si dejé mi correo.</label></fieldset>
-<div class="full"><button class="btn" type="submit">Ver mis recomendaciones</button></div></form>
-<div id="rs"></div></div></section>
+<section class="flex min-h-screen items-end bg-[radial-gradient(ellipse_at_80%_20%,rgba(212,175,55,.2),transparent_55%)] px-5 pb-20 pt-32">
+<div class="mx-auto w-full max-w-6xl">
+<p class="text-xs uppercase tracking-[.4em] text-[#D4AF37]">Asociación Peruana de Investigadores y Estudiantes de Filosofía</p>
+<h1 class="mt-4 max-w-4xl font-serif text-5xl font-black uppercase leading-[.95] text-white md:text-8xl">Pensar el Perú.<br>Pensar el mundo.</h1>
+<p class="mt-6 max-w-xl text-lg text-gray-400">Cursos, talleres, conferencias y videos de filosofía hechos por investigadores y estudiantes. Gratis y de pago, para todas las edades.</p>
+<p class="mt-8 flex flex-wrap gap-3"><a href="#cursos" class="bg-[#D4AF37] px-7 py-3 text-sm font-bold uppercase tracking-widest text-black">Ver cursos y talleres</a><a href="#videos" class="border border-white/40 px-7 py-3 text-sm font-bold uppercase tracking-widest text-white">Ver videos</a></p>
+<div class="mt-12 flex flex-wrap gap-10"><div><b id="nc" class="block font-serif text-4xl text-[#D4AF37]">8</b><span class="text-xs uppercase tracking-widest">Cursos y talleres</span></div><div><b class="block font-serif text-4xl text-[#D4AF37]">100%</b><span class="text-xs uppercase tracking-widest">Virtual</span></div><div><b class="block font-serif text-4xl text-[#D4AF37]">Gratis</b><span class="text-xs uppercase tracking-widest">y con certificado</span></div></div>
+</div></section>
 
-<section id="videos"><div class="w"><span class="kick">Multimedia</span><h2>Videos</h2><div class="grid" id="gv"></div>
-<p><a class="btn" data-s="yt" href="#">Ver todo en YouTube</a></p></div></section>
+<section id="cursos" class="scroll-mt-16 py-20"><div class="mx-auto max-w-6xl px-5">
+<span class="text-xs uppercase tracking-[.4em] text-[#D4AF37]">Formación</span><h2 class="mb-6 font-serif text-3xl font-bold uppercase text-white md:text-5xl">Cursos y talleres</h2>
+<div id="chips" class="mb-6 flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-widest"></div>
+<div id="gc" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4"></div></div></section>
 
-<section class="d" id="noticias"><div class="w"><span class="kick">Al día</span><h2>Noticias y actividades</h2><div class="grid" id="gn"></div>
-<h2 style="font-size:28px;margin-top:50px">Síguenos</h2><div class="soc"><a class="btn" data-s="ig" href="#" target="_blank" rel="noopener">Instagram</a><a class="btn" data-s="fb" href="#" target="_blank" rel="noopener">Facebook</a><a class="btn" data-s="yt" href="#" target="_blank" rel="noopener">YouTube</a></div></div></section>
-<section id="agora"><div class="w"><span class="kick">Plataforma de estudio</span><h2>Ágora Peruana</h2><p style="max-width:680px">Artículos, glosario, filósofos peruanos, ejercicios y recursos gratuitos para estudiar filosofía.</p><p><a class="lnk" href="aprender.html">Aprender filosofía</a><a class="lnk" href="filosofia-peruana.html">Filosofía peruana</a><a class="lnk" href="filosofos.html">Filósofos</a><a class="lnk" href="glosario.html">Glosario</a><a class="lnk" href="linea-tiempo.html">Línea del tiempo</a><a class="lnk" href="ejercicios.html">Ejercicios</a><a class="lnk" href="juegos.html">Juegos</a><a class="lnk" href="recursos.html">Recursos</a><a class="lnk" href="articulos.html">Artículos</a><a class="lnk" href="investigar.html">Investigar</a><a class="lnk" href="comunidad.html">Comunidad</a><a class="lnk" href="enviar-articulo.html">Envía tu artículo</a><a class="lnk" href="podcast.html">Podcast</a></p></div></section>
+<section id="ruta" class="scroll-mt-16 bg-[#0b0b0b] py-20"><div class="mx-auto max-w-6xl px-5">
+<span class="text-xs uppercase tracking-[.4em] text-[#D4AF37]">Hecho para ti</span><h2 class="mb-3 font-serif text-3xl font-bold uppercase text-white md:text-5xl">Encuentra tu ruta</h2>
+<p class="mb-8 max-w-xl text-gray-400">Cuéntanos qué te interesa y te recomendamos por dónde empezar. Tus respuestas nos ayudan a crear mejores cursos.</p>
+<form id="fm" class="grid gap-5 md:grid-cols-2">
+<fieldset class="border border-white/15 p-4"><legend class="px-2 text-xs font-bold uppercase tracking-widest text-[#D4AF37]">Tu edad</legend><select name="edad" required class="w-full bg-[#111] p-3 text-white"><option value="">Elige…</option><option>14–17</option><option>18–24</option><option>25–34</option><option>35–49</option><option>50 o más</option></select></fieldset>
+<fieldset class="border border-white/15 p-4"><legend class="px-2 text-xs font-bold uppercase tracking-widest text-[#D4AF37]">Género (opcional)</legend><select name="genero" class="w-full bg-[#111] p-3 text-white"><option value="">Prefiero no decir</option><option>Mujer</option><option>Hombre</option><option>Otro</option></select></fieldset>
+<fieldset class="border border-white/15 p-4"><legend class="px-2 text-xs font-bold uppercase tracking-widest text-[#D4AF37]">Te interesa</legend><label class="block py-1"><input type="checkbox" name="int" value="intro"> Empezar en filosofía</label><label class="block py-1"><input type="checkbox" name="int" value="latam"> Filosofía latinoamericana y peruana</label><label class="block py-1"><input type="checkbox" name="int" value="politica"> Política y ética</label><label class="block py-1"><input type="checkbox" name="int" value="investigar"> Investigar y publicar</label><label class="block py-1"><input type="checkbox" name="int" value="escritura"> Escribir y debatir</label></fieldset>
+<fieldset class="border border-white/15 p-4"><legend class="px-2 text-xs font-bold uppercase tracking-widest text-[#D4AF37]">Prefieres</legend><label class="block py-1"><input type="radio" name="pago" value="0" checked> Solo gratuitos</label><label class="block py-1"><input type="radio" name="pago" value="1"> También de pago</label></fieldset>
+<fieldset class="border border-white/15 p-4 md:col-span-2"><legend class="px-2 text-xs font-bold uppercase tracking-widest text-[#D4AF37]">Correo (opcional, para avisarte de nuevos cursos)</legend><input type="email" name="correo" placeholder="tucorreo@ejemplo.com" class="w-full bg-[#111] p-3 text-white"><label class="mt-3 block text-sm"><input type="checkbox" name="ok" required> Acepto que ASPIEF use estas respuestas para mejorar su oferta y contactarme si dejé mi correo.</label></fieldset>
+<div class="md:col-span-2"><button type="submit" class="bg-[#D4AF37] px-8 py-3 text-sm font-bold uppercase tracking-widest text-black">Ver mis recomendaciones</button></div>
+</form><div id="rs" class="mt-8"></div></div></section>
 
-<section id="nosotros"><div class="w"><span class="kick">Nosotros</span><h2>Quiénes somos</h2>
-<p style="max-width:720px">[Aquí va la presentación oficial de ASPIEF: origen, misión, visión y fines.]</p>
-<h2 style="font-size:28px;margin-top:50px">Preguntas frecuentes</h2>
-<details><summary>¿Qué es ASPIEF?</summary><p>La Asociación Peruana de Investigadores y Estudiantes de Filosofía.</p></details>
-<details><summary>¿Los cursos son gratuitos?</summary><p>Hay talleres y cursos gratuitos, y cursos de pago con certificado.</p></details>
-<details><summary>¿Cómo me inscribo?</summary><p>Con el botón "Inscribirme" de cada curso o escribiendo a aspief.pe@gmail.com.</p></details></div></section>
+<section id="programas" class="scroll-mt-16 py-20"><div class="mx-auto max-w-6xl px-5">
+<span class="text-xs uppercase tracking-[.4em] text-[#D4AF37]">Contenido</span><h2 class="mb-6 font-serif text-3xl font-bold uppercase text-white md:text-5xl">Programas</h2>
+<div id="gp" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4"></div></div></section>
 
-<footer><div class="w"><b style="color:#fff;letter-spacing:3px">ASPIEF</b><p>Asociación Peruana de Investigadores y Estudiantes de Filosofía · Lima, Perú<br><a href="mailto:aspief.pe@gmail.com">aspief.pe@gmail.com</a></p><p>© ASPIEF</p></div></footer>
-<div id="md"><div><div class="fr" id="fr"></div><p><button class="btn" id="cl">Cerrar</button></p></div></div>
+<section id="envivo" class="scroll-mt-16 bg-[#0b0b0b] py-20"><div class="mx-auto max-w-6xl px-5">
+<span class="text-xs uppercase tracking-[.4em] text-[#D4AF37]">Transmisión</span><h2 class="mb-6 font-serif text-3xl font-bold uppercase text-white md:text-5xl"><span class="text-red-500">●</span> En vivo</h2>
+<div id="lv" class="flex aspect-video items-center justify-center border border-white/10 bg-black p-6 text-center text-gray-400">Aquí aparecerá nuestra próxima transmisión. Mientras tanto, mira los videos del canal.</div>
+<p class="mt-5"><a data-s="yt" target="_blank" rel="noopener" href="#" class="inline-block bg-[#D4AF37] px-7 py-3 text-sm font-bold uppercase tracking-widest text-black">Ir al canal de YouTube</a></p></div></section>
+
+<section id="videos" class="scroll-mt-16 py-20"><div class="mx-auto max-w-6xl px-5">
+<span class="text-xs uppercase tracking-[.4em] text-[#D4AF37]">Multimedia</span><h2 class="mb-6 font-serif text-3xl font-bold uppercase text-white md:text-5xl">Videos</h2>
+<div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+<!-- PARA AGREGAR UN VIDEO: copia una línea como esta, pega el enlace de YouTube y listo. El título y la miniatura salen solos. -->
+<!-- <div class="video-card-automatica" data-url="https://youtu.be/CODIGO"></div> -->
+</div>
+<div id="sinvid" class="border border-white/10 p-8 text-center text-gray-400">Pronto verás aquí nuestros videos. <a data-s="yt" target="_blank" rel="noopener" href="#" class="font-bold text-[#D4AF37]">Míralos en YouTube →</a></div></div></section>
+
+<section id="horarios" class="scroll-mt-16 bg-[#0b0b0b] py-20"><div class="mx-auto max-w-6xl px-5">
+<span class="text-xs uppercase tracking-[.4em] text-[#D4AF37]">Programación</span><h2 class="mb-6 font-serif text-3xl font-bold uppercase text-white md:text-5xl">Horarios</h2>
+<div class="overflow-x-auto"><table class="w-full text-left text-sm"><thead><tr class="border-b border-[#D4AF37]/50 text-xs uppercase tracking-widest text-[#D4AF37]"><th class="p-3">Día</th><th class="p-3">Hora (Lima)</th><th class="p-3">Actividad</th></tr></thead><tbody id="tb"></tbody></table></div>
+<p class="mt-3 text-xs text-gray-500">Horarios de ejemplo: reemplázalos por los reales.</p></div></section>
+
+<section id="noticias" class="scroll-mt-16 py-20"><div class="mx-auto max-w-6xl px-5">
+<span class="text-xs uppercase tracking-[.4em] text-[#D4AF37]">Al día</span><h2 class="mb-6 font-serif text-3xl font-bold uppercase text-white md:text-5xl">Noticias y actividades</h2>
+<div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+<!-- PARA AGREGAR UNA ACTIVIDAD: copia una línea, cambia el enlace de Facebook o Instagram, el título y la fecha. -->
+<div class="evento-automatico" data-url="https://www.usat.edu.pe/noticias/docente-e-investigador-de-la-usat-es-invitado-como-ponente-magistral-en-el-coloquio-nacional-sobre-julio-ramon-ribeyro/" data-titulo="Coloquio nacional sobre Julio Ramón Ribeyro" data-fecha="3 de septiembre de 2026"></div>
+<div class="evento-automatico" data-url="https://www.instagram.com/aspief_peru/" data-titulo="Actividades de ASPIEF en Instagram" data-fecha="Siempre al día"></div>
+<div class="evento-automatico" data-url="https://www.facebook.com/people/APIEF/61585745674271/" data-titulo="Publicaciones de la Asociación en Facebook" data-fecha="Siempre al día"></div>
+</div>
+<h3 class="mb-4 mt-12 font-serif text-2xl text-white">Síguenos</h3>
+<p class="flex flex-wrap gap-3"><a data-s="ig" target="_blank" rel="noopener" href="#" class="bg-[#D4AF37] px-6 py-2.5 text-sm font-bold uppercase text-black">Instagram</a><a data-s="fb" target="_blank" rel="noopener" href="#" class="bg-[#D4AF37] px-6 py-2.5 text-sm font-bold uppercase text-black">Facebook</a><a data-s="yt" target="_blank" rel="noopener" href="#" class="bg-[#D4AF37] px-6 py-2.5 text-sm font-bold uppercase text-black">YouTube</a></p></div></section>
+
+<section id="agora" class="scroll-mt-16 bg-[#0b0b0b] py-20"><div class="mx-auto max-w-6xl px-5">
+<span class="text-xs uppercase tracking-[.4em] text-[#D4AF37]">Plataforma de estudio</span><h2 class="mb-4 font-serif text-3xl font-bold uppercase text-white md:text-5xl">Ágora Peruana</h2>
+<p class="mb-6 max-w-2xl text-gray-400">Artículos, glosario, filósofos peruanos, ejercicios y recursos gratuitos para estudiar filosofía.</p>
+<p id="ga" class="flex flex-wrap gap-3 text-xs font-semibold uppercase tracking-widest"></p></div></section>
+
+<section id="nosotros" class="scroll-mt-16 py-20"><div class="mx-auto max-w-6xl px-5">
+<span class="text-xs uppercase tracking-[.4em] text-[#D4AF37]">Nosotros</span><h2 class="mb-4 font-serif text-3xl font-bold uppercase text-white md:text-5xl">Quiénes somos</h2>
+<p class="max-w-2xl">[Aquí va la presentación oficial de ASPIEF: origen, misión, visión y fines.]</p>
+<h3 id="faq" class="mb-3 mt-12 scroll-mt-20 font-serif text-2xl text-white">Preguntas frecuentes</h3>
+<details class="border-b border-white/10 py-4"><summary class="cursor-pointer font-bold text-white">¿Qué es ASPIEF?</summary><p class="mt-2">La Asociación Peruana de Investigadores y Estudiantes de Filosofía.</p></details>
+<details class="border-b border-white/10 py-4"><summary class="cursor-pointer font-bold text-white">¿Los cursos son gratuitos?</summary><p class="mt-2">Hay talleres y cursos gratuitos, y cursos de pago con certificado.</p></details>
+<details class="border-b border-white/10 py-4"><summary class="cursor-pointer font-bold text-white">¿Cómo me inscribo?</summary><p class="mt-2">Con el botón "Inscribirme" de cada curso o escribiendo a aspief.pe@gmail.com.</p></details></div></section>
+
+<footer class="border-t border-white/10 bg-black py-12 text-sm"><div class="mx-auto grid max-w-6xl gap-8 px-5 sm:grid-cols-2 lg:grid-cols-4">
+<div><b class="font-serif text-xl tracking-[.25em] text-white">ASPIEF</b><p class="mt-2 text-gray-500">Asociación Peruana de Investigadores y Estudiantes de Filosofía · Lima, Perú<br><a href="mailto:aspief.pe@gmail.com" class="hover:text-[#D4AF37]">aspief.pe@gmail.com</a></p></div>
+<div><h4 class="mb-2 text-xs font-bold uppercase tracking-widest text-[#D4AF37]">Más información</h4><a class="block py-0.5 hover:text-[#D4AF37]" href="#faq">Preguntas frecuentes</a><a class="block py-0.5 hover:text-[#D4AF37]" href="mailto:aspief.pe@gmail.com">Contáctanos</a><a class="block py-0.5 hover:text-[#D4AF37]" href="enviar-articulo.html">Envía tu artículo</a></div>
+<div><h4 class="mb-2 text-xs font-bold uppercase tracking-widest text-[#D4AF37]">Mapa de sitio</h4><a class="block py-0.5 hover:text-[#D4AF37]" href="#cursos">Cursos y talleres</a><a class="block py-0.5 hover:text-[#D4AF37]" href="#programas">Programas</a><a class="block py-0.5 hover:text-[#D4AF37]" href="#noticias">Al Día</a><a class="block py-0.5 hover:text-[#D4AF37]" href="#horarios">Horarios</a><a class="block py-0.5 hover:text-[#D4AF37]" href="#envivo">En vivo</a></div>
+<div><h4 class="mb-2 text-xs font-bold uppercase tracking-widest text-[#D4AF37]">Síguenos</h4><a data-s="ig" target="_blank" rel="noopener" href="#" class="block py-0.5 hover:text-[#D4AF37]">Instagram</a><a data-s="fb" target="_blank" rel="noopener" href="#" class="block py-0.5 hover:text-[#D4AF37]">Facebook</a><a data-s="yt" target="_blank" rel="noopener" href="#" class="block py-0.5 hover:text-[#D4AF37]">YouTube</a></div>
+</div><p class="mt-8 text-center text-xs text-gray-600">© 2026 ASPIEF</p></footer>
+
 <script>
-const {CFG,CUR,VID,NEWS}=DATOS;
+/* ===== CONFIGURACIÓN (edita solo lo que está entre comillas) ===== */
+const CFG={ig:'https://www.instagram.com/aspief_peru/',fb:'https://www.facebook.com/people/APIEF/61585745674271/',yt:'https://www.youtube.com/@Asefip.2026',mail:'aspief.pe@gmail.com',live:'',form:'',ga:''};
+// CUR: [título, tipo, pago(0/1), modalidad, duración, descripción, interés, enlace de inscripción (opcional)]
+const CUR=[
+['Taller de lectura de textos filosóficos','Taller',0,'Virtual','4 semanas','Lectura guiada y discusión de textos clásicos y latinoamericanos.','intro',''],
+['Taller de escritura académica y ensayo','Taller',0,'Virtual','3 semanas','Cómo estructurar un ensayo filosófico y argumentar por escrito.','escritura',''],
+['Taller de argumentación y debate','Taller',0,'Virtual','2 semanas','Oratoria, lógica informal y debate respetuoso.','escritura',''],
+['Introducción a la filosofía','Curso',0,'Virtual','6 semanas','Problemas y autores fundamentales para quien empieza.','intro',''],
+['Filosofía latinoamericana y peruana','Curso',1,'Virtual en vivo','8 semanas','Debates y autores del pensamiento en nuestra región. Con certificado.','latam',''],
+['Cómo investigar y publicar un artículo de filosofía','Curso',1,'Virtual en vivo','6 semanas','Del tema a la revista: método, citación y envío. Con certificado.','investigar',''],
+['Platón y la filosofía política','Curso',1,'Virtual en vivo','8 semanas','Lectura comentada de diálogos políticos con acompañamiento docente. Con certificado.','politica',''],
+['Taller de proyecto de tesis','Taller',1,'Virtual','5 semanas','Plantea tu pregunta, tu marco teórico y tu cronograma con asesoría. Con certificado.','investigar','']];
+const PROG=[['Diálogos Filosóficos','Conversatorios con investigadores.'],['Leer para Pensar','Lectura guiada de textos clave.'],['Investigadores en Voz Alta','Presentación de investigaciones en curso.'],['Los Estudiantes Opinan','Debates y miradas jóvenes.']];
+const HOR=[['Lunes','7:00 p.m.','Diálogos Filosóficos'],['Martes','7:00 p.m.','Taller de lectura'],['Miércoles','8:00 p.m.','Investigadores en Voz Alta'],['Jueves','7:00 p.m.','Curso (en vivo)'],['Viernes','8:00 p.m.','Los Estudiantes Opinan'],['Sábado','5:00 p.m.','Conferencias y seminarios']];
+const AGORA=[['aprender','Aprender filosofía'],['filosofia-peruana','Filosofía peruana'],['filosofos','Filósofos'],['glosario','Glosario'],['linea-tiempo','Línea del tiempo'],['ejercicios','Ejercicios'],['juegos','Juegos'],['recursos','Recursos'],['articulos','Artículos'],['investigar','Investigar'],['comunidad','Comunidad'],['enviar-articulo','Envía tu artículo'],['podcast','Podcast']];
+/* ================================================================ */
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
-
 const E=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-$('#nc').textContent=CUR.length;
-$('#gc').innerHTML=CUR.map(c=>`<article class="card" data-t="${c.tp.toLowerCase()}" data-p="${c.p}"><div class="im"><span class="bd ${c.p?'p':''}">${c.p?'De pago':'Gratis'}</span>${E(c.tp)}</div><div class="tx"><h3>${E(c.t)}</h3><p>${E(c.d)}</p><small>${E(c.mod)} · ${E(c.dur)}${c.p&&c.precio?' · '+E(c.precio):''}</small><a class="lk" href="${c.url?E(c.url):'mailto:'+CFG.mail+'?subject='+encodeURIComponent('Inscripción: '+c.t)}" ${c.url?'target="_blank" rel="noopener"':''}>Inscribirme →</a></div></article>`).join('');
-$('#gv').innerHTML=VID.map((v,i)=>`<button class="card vid" data-i="${i}"><div class="im">${E(v.k||'Video')}</div><div class="tx"><h3>${E(v.t)}</h3></div></button>`).join('');
-$('#gn').innerHTML=NEWS.map(n=>`<a class="card" ${n.url?`href="${E(n.url)}" target="_blank" rel="noopener"`:'href="#noticias"'}><div class="im">${E(n.fuente||'Novedad')}</div><div class="tx"><h3>${E(n.t)}</h3><p>${E(n.d)}</p><small>${E(n.fecha||'')}</small>${n.url?'<span class="lk">Leer la noticia →</span>':''}</div></a>`).join('');
-$$('[data-s]').forEach(a=>{const u=CFG[a.dataset.s];if(u)a.href=u;else a.style.display='none'});
+const CARD='buscable group overflow-hidden border border-white/10 bg-white/[.03] transition hover:-translate-y-1 hover:border-[#D4AF37]/60';
+const GOLD='bg-[#D4AF37] text-black';
+// redes
+$$('[data-s]').forEach(a=>{const u=CFG[a.dataset.s];if(u)a.href=u;else a.classList.add('hidden')});
 if(CFG.ga){const s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id='+CFG.ga;document.head.append(s);window.dataLayer=[];window.gtag=function(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config',CFG.ga)}
-$('#mn').onclick=()=>$('#ul').classList.toggle('open');$$('#ul a').forEach(a=>a.onclick=()=>$('#ul').classList.remove('open'));
-$$('.chips button').forEach(b=>b.onclick=()=>{$$('.chips button').forEach(x=>x.classList.remove('on'));b.classList.add('on');const v=b.dataset.v;$$('#gc .card').forEach(c=>c.style.display=!v||c.dataset.p==v||c.dataset.t==v?'':'none')});
-const yt=u=>{const m=(u||'').match(/(?:youtu\.be\/|v=|embed\/|live\/)([\w-]{11})/);return m&&'https://www.youtube-nocookie.com/embed/'+m[1]};
-$$('.vid').forEach(b=>b.onclick=()=>{const v=VID[b.dataset.i],y=yt(v.url);$('#fr').innerHTML=y?`<iframe src="${y}" allowfullscreen></iframe>`:'<span>Aquí se coloca el enlace del video (campo "url" en VID).</span>';$('#md').style.display='flex'});
-const cl=()=>{$('#md').style.display='none';$('#fr').innerHTML=''};$('#cl').onclick=cl;$('#md').onclick=e=>{if(e.target.id=='md')cl()};
+// menú móvil y buscador
+$('#mn').onclick=()=>{$('#ul').classList.toggle('hidden');$('#ul').classList.toggle('flex')};
+$$('#ul a').forEach(a=>a.addEventListener('click',()=>{if(innerWidth<1024){$('#ul').classList.add('hidden');$('#ul').classList.remove('flex')}}));
+$('#sbt').onclick=()=>{$('#sb').classList.toggle('hidden');$('#q').focus()};
+$('#q').oninput=e=>{const v=e.target.value.toLowerCase();$$('.buscable').forEach(c=>c.classList.toggle('hidden',!!v&&!c.textContent.toLowerCase().includes(v)));if(v)location.hash='#cursos'};
+// cursos y talleres
+$('#nc').textContent=CUR.length;
+$('#gc').innerHTML=CUR.map(c=>`<article class="${CARD} flex flex-col" data-t="${c[1].toLowerCase()}" data-p="${c[2]}"><div class="p-5 pb-0"><span class="px-2 py-1 text-[11px] font-bold uppercase ${c[2]?GOLD:'bg-emerald-700 text-white'}">${c[2]?'De pago':'Gratis'}</span></div><div class="flex flex-1 flex-col p-5"><h3 class="font-serif text-xl text-white">${E(c[0])}</h3><p class="mt-2 text-sm">${E(c[5])}</p><small class="mt-2 text-gray-500">${E(c[3])} · ${E(c[4])}${c[2]?' · Precio por confirmar':''}</small><a class="mt-auto pt-4 text-sm font-bold text-[#D4AF37]" ${c[7]?`href="${E(c[7])}" target="_blank" rel="noopener"`:`href="mailto:${CFG.mail}?subject=${encodeURIComponent('Inscripción: '+c[0])}"`}>Inscribirme →</a></div></article>`).join('');
+const CH=[['','Todos'],['0','Gratuitos'],['1','De pago'],['taller','Talleres'],['curso','Cursos']];
+$('#chips').innerHTML=CH.map((x,i)=>`<button data-v="${x[0]}" class="border border-white/30 px-4 py-2 ${i?'':GOLD}">${x[1]}</button>`).join('');
+function filtrar(v){$$('#chips button').forEach(b=>{const on=b.dataset.v==v;b.className='border border-white/30 px-4 py-2 '+(on?GOLD:'')});$$('#gc article').forEach(c=>c.style.display=!v||c.dataset.p==v||c.dataset.t==v?'':'none')}
+$$('#chips button').forEach(b=>b.onclick=()=>filtrar(b.dataset.v));
+$$('[data-f]').forEach(a=>a.addEventListener('click',()=>filtrar(a.dataset.f)));
+// programas, horarios y Ágora
+$('#gp').innerHTML=PROG.map(p=>`<a href="#videos" class="${CARD} block p-6"><span class="text-xs uppercase tracking-widest text-[#D4AF37]">Programa</span><h3 class="mt-2 font-serif text-xl text-white">${E(p[0])}</h3><p class="mt-2 text-sm">${E(p[1])}</p></a>`).join('');
+$('#tb').innerHTML=HOR.map(h=>`<tr class="border-b border-white/10"><td class="p-3 text-white">${E(h[0])}</td><td class="p-3">${E(h[1])}</td><td class="p-3">${E(h[2])}</td></tr>`).join('');
+$('#ga').innerHTML=AGORA.map(a=>`<a href="${a[0]}.html" class="border border-white/30 px-4 py-2 hover:border-[#D4AF37] hover:text-[#D4AF37]">${a[1]}</a>`).join('');
+// en vivo
+const vid=u=>((u||'').match(/(?:youtu\.be\/|v=|embed\/|shorts\/|live\/)([\w-]{11})/)||[])[1];
+if(vid(CFG.live))$('#lv').innerHTML=`<iframe class="h-full w-full" src="https://www.youtube-nocookie.com/embed/${vid(CFG.live)}" allowfullscreen></iframe>`;
+// videos de YouTube automáticos (título por noembed.com, miniatura HD, clic = reproductor)
+$$('.video-card-automatica').forEach(async d=>{const id=vid(d.dataset.url);if(!id){d.remove();return}
+d.className+=' '+CARD+' cursor-pointer';
+d.innerHTML=`<div class="relative aspect-video bg-black"><img src="https://i.ytimg.com/vi/${id}/maxresdefault.jpg" alt="" loading="lazy" class="h-full w-full object-cover" onload="if(this.naturalWidth<200)this.src='https://i.ytimg.com/vi/${id}/hqdefault.jpg'"><span class="absolute inset-0 m-auto flex h-14 w-14 items-center justify-center rounded-full text-xl ${GOLD}">▶</span></div><h3 class="p-4 font-serif text-lg text-white">Cargando…</h3>`;
+d.onclick=()=>{d.firstElementChild.innerHTML=`<iframe class="h-full w-full" src="https://www.youtube-nocookie.com/embed/${id}?autoplay=1" allow="autoplay;encrypted-media;fullscreen" allowfullscreen></iframe>`;d.onclick=null};
+const h=d.querySelector('h3');try{const r=await fetch('https://noembed.com/embed?url='+encodeURIComponent('https://www.youtube.com/watch?v='+id));const j=await r.json();h.textContent=j.title||d.dataset.titulo||'Video'}catch(e){h.textContent=d.dataset.titulo||'Ver video'}});
+$('#sinvid').classList.toggle('hidden',!!$$('.video-card-automatica').length);
+// actividades espejo (Facebook / Instagram / noticias): fondo artístico en escala de grises
+const ART=['<rect width="400" height="200" fill="#1a1a1a"/><path d="M40 70 200 20 360 70Z" fill="#555"/>'+[60,120,180,240,300].map(x=>`<rect x="${x}" y="78" width="26" height="90" fill="#888"/>`).join('')+'<rect x="40" y="170" width="320" height="14" fill="#666"/>',
+'<rect width="400" height="200" fill="#161616"/>'+[...Array(14)].map((_,i)=>`<rect x="${30+i*26}" y="${60+(i*37)%40}" width="20" height="${110-(i*37)%40}" fill="${i%2?'#777':'#999'}"/>`).join('')+'<rect x="20" y="170" width="360" height="12" fill="#444"/>',
+'<rect width="400" height="200" fill="#1c1c1c"/>'+[70,200,330].map(x=>`<path d="M${x-45} 190V90a45 45 0 0 1 90 0V190" fill="none" stroke="#999" stroke-width="8"/>`).join(''),
+'<rect width="400" height="200" fill="#141414"/>'+[90,65,40,18].map((r,i)=>`<circle cx="200" cy="100" r="${r}" fill="none" stroke="${i%2?'#aaa':'#666'}" stroke-width="5"/>`).join('')];
+const art=i=>`url("data:image/svg+xml,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice">'+ART[i%4]+'</svg>')}")`;
+$$('.evento-automatico').forEach((d,i)=>{const u=d.dataset.url||'#',b=/instagram/.test(u)?'Ver en Instagram':/facebook|fb\.com/.test(u)?'Ver en Facebook':'Leer más';
+d.className+=' '+CARD+' flex flex-col';
+d.innerHTML=`<div class="h-44 bg-cover bg-center grayscale" style="background-image:${d.dataset.img?`url('${E(d.dataset.img)}')`:art(i)}"></div><div class="flex flex-1 flex-col p-5"><small class="text-xs uppercase tracking-widest text-[#D4AF37]">${E(d.dataset.fecha||'')}</small><h3 class="mt-1 font-serif text-xl text-white">${E(d.dataset.titulo||'Actividad')}</h3><a href="${E(u)}" target="_blank" rel="noopener" class="mt-5 inline-block self-start px-5 py-2 text-xs font-bold uppercase tracking-widest ${GOLD}">${b} →</a></div>`});
+// formulario "Encuentra tu ruta"
 $('#fm').onsubmit=ev=>{ev.preventDefault();const f=new FormData(ev.target),it=f.getAll('int'),pay=f.get('pago')=='1';
-const r=CUR.map(c=>({c,s:(it.includes(c.g)?2:0)+(c.p&&!pay?-5:0)+(!c.p?.5:0)})).filter(x=>x.s>0).sort((a,b)=>b.s-a.s).slice(0,3);
-$('#rs').innerHTML='<h3>Te recomendamos empezar por:</h3><div class="grid">'+(r.map(x=>`<a class="card" href="mailto:${CFG.mail}?subject=${encodeURIComponent('Inscripción: '+x.c.t)}"><div class="im">${x.c.p?'De pago':'Gratis'}</div><div class="tx"><h3>${x.c.t}</h3><span class="lk">Inscribirme →</span></div></a>`).join('')||'<p>Elige al menos un interés.</p>')+'</div>';
+const r=CUR.map(c=>({c,s:(it.includes(c[6])?2:0)+(c[2]&&!pay?-5:0)+(!c[2]?.5:0)})).filter(x=>x.s>0).sort((a,b)=>b.s-a.s).slice(0,3);
+$('#rs').innerHTML='<h3 class="font-serif text-2xl text-white">Te recomendamos empezar por:</h3><div class="mt-4 grid gap-6 md:grid-cols-3">'+(r.map(x=>`<a class="${CARD} block p-5" href="mailto:${CFG.mail}?subject=${encodeURIComponent('Inscripción: '+x.c[0])}"><span class="text-xs uppercase text-[#D4AF37]">${x.c[2]?'De pago':'Gratis'}</span><h4 class="mt-1 font-serif text-lg text-white">${E(x.c[0])}</h4><span class="mt-3 block text-sm font-bold text-[#D4AF37]">Inscribirme →</span></a>`).join('')||'<p>Elige al menos un interés.</p>')+'</div>';
 const d={edad:f.get('edad'),genero:f.get('genero')||'no indica',intereses:it.join(', '),pago:pay?'gratis y pago':'solo gratis',correo:f.get('correo')||''};
 try{localStorage.setItem('aspief_perfil',JSON.stringify(d))}catch(e){}
 if(window.gtag)gtag('event','perfil_audiencia',{edad:d.edad,genero:d.genero});
 if(CFG.form)fetch(CFG.form,{method:'POST',mode:'no-cors',body:f}).catch(()=>{});
-else $('#rs').insertAdjacentHTML('beforeend',`<p><a class="btn" href="mailto:${CFG.mail}?subject=${encodeURIComponent('Perfil de interés')}&body=${encodeURIComponent(Object.entries(d).map(([k,v])=>k+': '+v).join('\n'))}">Enviar mis respuestas a ASPIEF</a></p>`)};
+else $('#rs').insertAdjacentHTML('beforeend',`<p class="mt-6"><a class="inline-block px-6 py-3 text-sm font-bold uppercase ${GOLD}" href="mailto:${CFG.mail}?subject=${encodeURIComponent('Perfil de interés')}&body=${encodeURIComponent(Object.entries(d).map(([k,v])=>k+': '+v).join('\n'))}">Enviar mis respuestas a ASPIEF</a></p>`)};
 </script>
 </body>
 </html>
